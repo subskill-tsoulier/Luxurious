@@ -21,8 +21,11 @@ class HomepageController extends AbstractController
 
         return $this->render('homepage/index.html.twig', [
 	        'btc' => $service->get_actual_price('bitcoin', 'usd'),
+	        // 'btc' => '17.583',
 	        'eth' => $service->get_actual_price('ethereum', 'usd'),
+	        // 'eth' => '1.341',
 	        'xmr' => $service->get_actual_price('monero', 'usd'),
+	        // 'xmr' => '240',
         ]);
     }
 }

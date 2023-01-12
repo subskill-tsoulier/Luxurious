@@ -17,12 +17,12 @@
         {% endblock %}
     </head>
     <body class="bg-dark text-white">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav d-flex flex-direction-row">
         <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="{{ path('app_homepage') }}">Homepage</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="{{ path('app_dashboard') }}">Dashboard</a>
         </li>
     </ul>
         {% block body %}{% endblock %}
